@@ -1,0 +1,29 @@
+.field{
+    top: 100px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: darkgray;
+}
+
+.field p{
+    font-family: monospace;
+    font-size: 80;
+    text-align: center;
+    margin: 50px;
+    font-weight: bold;
+}
+
+.instructions{
+    margin-top: 350px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+#output{
+    user-select: auto;
+}
