@@ -34,8 +34,8 @@ document.body.onkeydown = function(e) {
     }
     if(e.keyCode == 32){
         document.getElementById("instructions").style.display = "none";
-        song.currentTime = 22;
         song.play();
+        song.currentTime = 22;
         if(Math.random() > 0.5){
             song.playbackRate = 0.91;
             slope = 0.00003;
