@@ -1,3 +1,4 @@
+
 let field1 = document.getElementById("1");
 let field2 = document.getElementById("2");
 let field3 = document.getElementById("3");
@@ -33,13 +34,14 @@ document.body.onkeydown = function(e) {
     }
     if(e.keyCode == 32){
         document.getElementById("instructions").style.display = "none";
+        song.currentTime = 22;
         song.play();
-        if(Math.random() > 1){
-            song.playbackRate = 1;
-            slope = 0.00001;
+        if(Math.random() > 0.5){
+            song.playbackRate = 0.91;
+            slope = 0.00003;
         }else{
-            song.playbackRate = 1.06;
-            slope = -0.00001;
+            song.playbackRate = 1.09;
+            slope = -0.00003;
         }
         interval = setInterval(tick, 10);
     }
